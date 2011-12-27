@@ -16,7 +16,7 @@ class Wall: public Element {
 public:
 	Wall(int x, int y);
 
-	const char symbol() const { return '#'; }
+	char symbol() const { return '#'; }
 	Message enter(Character *ch);
 };
 

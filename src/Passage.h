@@ -17,7 +17,7 @@ public:
 	Passage(int x, int y, Item *item);
 	virtual ~Passage();
 
-	const char symbol() const;
+	char symbol() const;
 	Message enter(Character *ch);
 
 private:

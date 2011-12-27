@@ -1,4 +1,4 @@
-NAME = maze
+NAME = maze_game
 C = g++
 SRC_DIR = src
 FLAGS = -W -O3
@@ -9,4 +9,6 @@ maze :
 	$(C) $(FLAGS) $(SRC_DIR)/*.h $(SRC_DIR)/*.cpp -o $(NAME)
 
 clean :
-	rm -f *.o
+#	rm -f *.o
+	rm $(NAME)
+	

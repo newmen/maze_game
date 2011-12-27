@@ -16,7 +16,7 @@ class Entrance: public Element {
 public:
 	Entrance(int x, int y);
 
-	const char symbol() const { return ' '; }
+	char symbol() const { return ' '; }
 	Message enter(Character *ch);
 };
 

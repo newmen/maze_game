@@ -18,7 +18,7 @@ public:
 
 	void setWayOut(Portal *way_out);
 
-	const char symbol() const { return '0'; }
+	char symbol() const { return '0'; }
 	Message enter(Character *ch);
 
 private:

@@ -16,7 +16,7 @@ class Exit: public Element {
 public:
 	Exit(int x, int y);
 
-	const char symbol() const { return ' '; }
+	char symbol() const { return ' '; }
 	Message enter(Character *ch);
 };
 

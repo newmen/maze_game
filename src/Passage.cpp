@@ -16,7 +16,7 @@ Passage::~Passage() {
 	if (_item) delete _item;
 }
 
-const char Passage::symbol() const {
+char Passage::symbol() const {
 	if (_item) return _item->symbol();
 	return ' ';
 }

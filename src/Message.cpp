@@ -31,6 +31,7 @@ Message Message::operator=(const Message &other) {
 	int length = strlen(other._text);
 	_text = new char[length + 1];
 	strcpy(_text, other._text);
+	return *this;
 }
 
 }

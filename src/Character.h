@@ -24,7 +24,7 @@ public:
 	void takeKey() { _has_key = true; }
 	void useKey() { _has_key = false; }
 
-	const char symbol() const { return '+'; }
+	char symbol() const { return '+'; }
 
 private:
 	int _steps;

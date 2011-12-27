@@ -12,7 +12,7 @@ namespace MazeGame {
 
 class Symbol {
 public:
-	virtual const char symbol() const = 0;
+	virtual char symbol() const = 0;
 
 protected:
 	Symbol() {}

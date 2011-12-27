@@ -12,7 +12,7 @@ namespace MazeGame {
 
 Door::Door(int x, int y, bool opened) : Element(x, y), _opened(opened) {}
 
-const char Door::symbol() const {
+char Door::symbol() const {
 	if (_opened) return '-';
 	return '=';
 }

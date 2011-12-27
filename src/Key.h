@@ -16,7 +16,7 @@ class Key: public Item {
 public:
 	Key();
 
-	const char symbol() const { return 'k'; }
+	char symbol() const { return 'k'; }
 	const char *name() const { return "Ключ"; }
 	bool raise(Character *ch) const;
 };

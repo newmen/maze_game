@@ -113,14 +113,17 @@ Message Maze::readAndMove() {
 	tcsetattr(0, TCSANOW, &t);
 
 	char c;
+	ssize_t result;
 	bool good_key = false;
 	do {
-		read(0, &c, 1);
+		result = read(0, &c, 1);
 		if (c == 91) {
-			read(0, &c, 1); // если нажимаем стрелку - считываем ещё раз
+			result = read(0, &c, 1); // если нажимаем стрелку - считываем ещё раз
 			if (c > 64 && c < 69) good_key = true;
 		}
 	} while (!good_key);
+
+	std::cout << "RESULT: " << result << std::endl;
 
 	int x = _character.x();
 	int y = _character.y();

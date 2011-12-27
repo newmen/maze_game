@@ -16,7 +16,7 @@ class Door: public Element {
 public:
 	Door(int x, int y, bool opened);
 
-	const char symbol() const;
+	char symbol() const;
 	Message enter(Character *ch);
 
 private:

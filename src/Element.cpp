@@ -44,6 +44,7 @@ Element *Element::factory(char symbol, int x, int y) {
 		if (first_portal) {
 			current_portal->setWayOut(first_portal);
 			first_portal->setWayOut(current_portal);
+			first_portal = 0;
 		} else {
 			first_portal = current_portal;
 		}
